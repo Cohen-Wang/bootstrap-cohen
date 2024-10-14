@@ -5,7 +5,7 @@
   --bs-selection-divider-shadow-top: rgb(129 129 129 / 10%);
   --bs-selection-divider-shadow-bottom: rgb(162 162 162 / 15%);
   --bs-hover-shadow-color: rgb(0 0 0 / 15%);
-  --bg-bg-net-background-image: url(./img/net_light.png);
+  --bg-bg-net-background-image: url(../assets/img/net_light.png);
 }
 [data-bs-theme=dark] {
   --bs-selection-divider-bg: rgb(0 0 0 / 10%);
@@ -13,7 +13,7 @@
   --bs-selection-divider-shadow-top: rgb(0 0 0 / 10%);
   --bs-selection-divider-shadow-bottom: rgb(0 0 0 / 15%);
   --bs-hover-shadow-color: rgb(0 0 0 / 50%);
-  --bg-bg-net-background-image: url(./img/net_dark.png);
+  --bg-bg-net-background-image: url(../assets/img/net_dark.png);
 }
 /*********************************
  * height
