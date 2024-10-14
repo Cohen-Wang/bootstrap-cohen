@@ -2,21 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><%= htmlWebpackPlugin.options.title %></title>
   <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
   <!-- header S -->
   <header class="fixed-top shadow-sm">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"><%= htmlWebpackPlugin.options.title %></a>
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#" onclick="document.body.setAttribute('data-bs-theme', 'dark')"><i class="bi-moon-stars-fill"></i></a>
+            <a class="nav-link" href="javascript: void(0);" onclick="document.body.setAttribute('data-bs-theme', 'dark')"><i class="bi-moon-stars-fill"></i></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" onclick="document.body.setAttribute('data-bs-theme', 'light')"><i class="bi-sun-fill"></i></a>
+            <a class="nav-link" href="javascript: void(0);" onclick="document.body.setAttribute('data-bs-theme', 'light')"><i class="bi-sun-fill"></i></a>
           </li>
         </ul>
       </div>
@@ -24,7 +25,7 @@
   </header>
   <!-- header E -->
   <div style="height: 56px;"></div>
-  <!-- jumbotron -->
+  <!-- jumbotron S -->
   <div class="text-bg-dark py-5">
     <div class="container-xxl">
       <div class="my-auto px-3">
@@ -39,13 +40,13 @@
       </div>
     </div>
   </div>
-  </div>
+  <!-- jumbotron S -->
   <!-- main S -->
   <main class="bg-net py-4">
     <div class="container-xxl">
       <div class="row">
         <!-- left -->
-        <div class="col-3">
+        <div class="d-none d-md-block col-md-4 col-lg-3">
           <div class="position-sticky" style="top: calc(56px + 1.5em);">
             <div class="list-group">
               <a class="list-group-item list-group-item-action" href="#blockquote">blockquote</a>
@@ -56,7 +57,7 @@
           </div>
         </div>
         <!-- right -->
-        <div class="col-9">
+        <div class="col-12 col-md-8 col-lg-9">
           <div class="row row-cols-1 gy-4">
             <!-- blockquote -->
             <div class="col" id="blockquote">
