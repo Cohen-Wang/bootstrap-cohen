@@ -6,19 +6,22 @@
   <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"><%= htmlWebpackPlugin.options.title %></a>
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" href="#" onclick="document.body.setAttribute('data-bs-theme', 'dark')"><i class="bi-moon-stars-fill"></i></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#" onclick="document.body.setAttribute('data-bs-theme', 'light')"><i class="bi-sun-fill"></i></a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+  <header class="fixed-top shadow-sm">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><%= htmlWebpackPlugin.options.title %></a>
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="document.body.setAttribute('data-bs-theme', 'dark')"><i class="bi-moon-stars-fill"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="document.body.setAttribute('data-bs-theme', 'light')"><i class="bi-sun-fill"></i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div style="height: 56px;"></div>
   <!-- jumbotron -->
   <div class="text-bg-dark py-5 mb-4">
     <div class="container-xxl">
@@ -41,11 +44,12 @@
       <div class="row">
         <!-- left -->
         <div class="col-3">
-          <div class="position-sticky" style="top: 1.5em;">
+          <div class="position-sticky" style="top: calc(56px + 1.5em);">
             <div class="list-group">
               <a class="list-group-item list-group-item-action" href="#blockquote">blockquote</a>
               <a class="list-group-item list-group-item-action" href="#b-selection-divider">b-selection-divider</a>
               <a class="list-group-item list-group-item-action" href="#bg-net">bg-net</a>
+              <a class="list-group-item list-group-item-action" href="#btn-dashed">btn-dashed</a>
             </div>
           </div>
         </div>
@@ -121,6 +125,25 @@
                 </div>
               </div>
             </div>
+
+            <!-- btn-dashed -->
+            <div class="col" id="btn-dashed">
+              <div class="card">
+                <div class="card-header fw-bold">btn-dashed</div>
+                <div class="card-body">
+                  <p>Our default branch is for development of our Bootstrap 5 release. Head to the v4-dev branch to view the readme, documentation, and source code for Bootstrap 4.</p>
+                  <div class="mb-4">
+                    <button class="btn btn-dashed">按钮</button>
+                  </div>
+                  <pre>
+                    <code>
+&lt;button class="btn btn-dashed"&gt;按钮 &lt;/button&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+            </div>
+
 
           </div>
         </div>
