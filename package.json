@@ -1,6 +1,6 @@
 {
   "name": "bootstrap-cohen",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "This is a private library made by cohen for my own project base on bootstrap v5",
   "main": "index.js",
   "scripts": {
