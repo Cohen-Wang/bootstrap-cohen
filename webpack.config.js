@@ -39,7 +39,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: path.join(__dirname, './src/index.html'),// 指定模板文件
-      title: 'bootstrap5.cohen', // 设置 HTML 的 title
+      title: 'bootstrap-cohen', // 设置 HTML 的 title
       filename: 'index.html', // //打包后输出的文件名
       inject: 'body', // 指定资源注入的位置
       minify: {
