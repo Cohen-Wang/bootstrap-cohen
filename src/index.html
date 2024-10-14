@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><%= htmlWebpackPlugin.options.title %></a>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  <!-- jumbotron -->
+  <div class="text-bg-dark py-5 mb-4">
+    <div class="container-xxl">
+      <div class="my-auto px-3 text-center">
+        <h1><%= htmlWebpackPlugin.options.title %></h1>
+        <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+        <p class="lead">
+          <a href="#" class="btn btn-lg btn-light fw-bold border-white bg-white">Learn more</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- content -->
+  <div class="bg-net">
+    <div class="container-xxl">
+      <div class="row">
+        <!-- left -->
+        <div class="col-3">
+          <div class="position-sticky" style="top: 1.5em;">
+            <div class="list-group">
+              <a class="list-group-item list-group-item-action" href="#blockquote">blockquote</a>
+              <a class="list-group-item list-group-item-action" href="#b-selection-divider">b-selection-divider</a>
+              <a class="list-group-item list-group-item-action" href="#bg-net">bg-net</a>
+            </div>
+          </div>
+        </div>
+        <!-- right -->
+        <div class="col-9">
+          <div class="row row-cols-1 gy-4">
+            <!-- blockquote -->
+            <div class="col" id="blockquote">
+              <div class="card">
+                <div class="card-header fw-bold">blockquote</div>
+                <div class="card-body">
+                  <p>Our default branch is for development of our Bootstrap 5 release. Head to the v4-dev branch to view the readme, documentation, and source code for Bootstrap 4.</p>
+                  <div class="mb-4">
+                    <blockquote>胜多负少佛挡杀佛发多少发撒</blockquote>
+                  </div>
+                  <pre>
+                    <code>
+                      &lt;blockquote&gt;胜多负少佛挡杀佛发多少发撒&lt;/blockquote&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+            </div>
+
+            <!-- b-selection-divider -->
+            <div class="col" id="b-selection-divider">
+              <div class="card">
+                <div class="card-header fw-bold">b-selection-divider</div>
+                <div class="card-body">
+                  <p>Our default branch is for development of our Bootstrap 5 release. Head to the v4-dev branch to view the readme, documentation, and source code for Bootstrap 4.</p>
+                  <div class="mb-4">
+                    <div class="b-selection-divider"></div>
+                  </div>
+                  <pre>
+                    <code>
+                      &lt;div class="b-selection-divider"&gt;&lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+            </div>
+            
+            <!-- bg-net -->
+            <div class="col" id="bg-net">
+              <div class="card">
+                <div class="card-header fw-bold">bg-net</div>
+                <div class="card-body">
+                  <p>Our default branch is for development of our Bootstrap 5 release. Head to the v4-dev branch to view the readme, documentation, and source code for Bootstrap 4.</p>
+                  <div class="mb-4">
+                    <div class="card">
+                      <div class="card-body z-3 bg-net">
+                        <p>something!</p>
+                        <p>something!</p>
+                        <p>something!</p>
+                        <p>something!</p>
+                        <p>something!</p>
+                        <p>something!</p>
+                      </div>
+                    </div>
+                  </div>
+                  <pre>
+                    <code>
+                      &lt;div class="card-body z-3 bg-net"&gt;
+                        &lt;div>something!&lt;/div&gt;
+                        &lt;div>something!&lt;/div&gt;
+                        &lt;div>something!&lt;/div&gt;
+                        &lt;div>something!&lt;/div&gt;
+                        &lt;div>something!&lt;/div&gt;
+                        &lt;div>something!&lt;/div&gt;
+                      &lt;/div>
+                    </code>
+                  </pre>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

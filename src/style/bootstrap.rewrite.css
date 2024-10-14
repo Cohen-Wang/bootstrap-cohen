@@ -1,0 +1,47 @@
+:root,
+[data-bs-theme=light] {
+  --bs-body-color: rgb(93, 63, 52);
+  --bs-emphasis-color-rgb: 93, 63, 52, 100
+}
+[data-bs-theme=dark] {
+  --bs-body-color: rgb(254, 251, 236);
+  --bs-emphasis-color-rgb: 254, 251, 236, 100
+}
+/*********************************
+ * a
+ *********************************/
+a {
+  text-decoration: none;
+}
+/*********************************
+ * .modal - filter
+ *********************************/
+.modal {
+  backdrop-filter: blur(4px);
+}
+/*********************************
+ * dropdown-menu
+ *********************************/
+.dropdown-menu {
+  border: none;
+  box-shadow: 0 20px 30px #53585d1a, 0 0 30px #53585d33;
+}
+
+/*********************************
+ * 去掉 focus 的 box-shadow
+ *********************************/
+.form-check-input:focus,
+.form-control:focus,
+.navbar-toggler:focus,
+.page-link:focus,
+.form-select:focus,
+.nav-link:focus-visible,
+.btn:focus-visible {
+  /*box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);*/
+  box-shadow: none;
+}
+
+.form-label {
+  margin-bottom: 0.25rem;
+  margin-top: 0.5rem;
+}

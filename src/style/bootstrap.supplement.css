@@ -1,0 +1,160 @@
+:root,
+[data-bs-theme=light] {
+  --bs-selection-divider-bg: rgb(188 188 188 / 10%);
+  --bs-selection-divider-border: rgb(158 158 158 / 15%);
+  --bs-selection-divider-shadow-top: rgb(129 129 129 / 10%);
+  --bs-selection-divider-shadow-bottom: rgb(162 162 162 / 15%);
+  --bs-hover-shadow-color: rgb(0 0 0 / 15%);
+  --bg-bg-net-background-image: url(./img/net_light.png);
+}
+[data-bs-theme=dark] {
+  --bs-selection-divider-bg: rgb(0 0 0 / 10%);
+  --bs-selection-divider-border: rgb(0 0 0 / 15%);
+  --bs-selection-divider-shadow-top: rgb(0 0 0 / 10%);
+  --bs-selection-divider-shadow-bottom: rgb(0 0 0 / 15%);
+  --bs-hover-shadow-color: rgb(0 0 0 / 50%);
+  --bg-bg-net-background-image: url(./img/net_dark.png);
+}
+/*********************************
+ * height
+ *********************************/
+.vh-25 {
+  height: 25vh;
+}
+.vh-50 {
+  height: 50vh;
+}
+.vh-75 {
+  height: 75vh;
+}
+/*********************************
+ * blockquote
+ *********************************/
+blockquote {
+  padding: 10px 20px;
+  margin: 0 0 20px;
+  font-size: 17.5px;
+  border-left: 5px solid rgba(var(--bs-emphasis-color-rgb));
+}
+
+blockquote > p {
+  margin-bottom: 0 !important;
+}
+/*********************************
+ * b-selection-divider
+ *********************************/
+.b-selection-divider {
+  height: 1rem;
+  background-color: var(--bs-selection-divider-bg);
+  border-style: solid;
+  border-width: 1px 0;
+  border-color: var(--bs-selection-divider-border);
+  box-shadow: inset 0 0.5em 1.5em var(--bs-selection-divider-shadow-top), inset 0 0.125em 0.5em var(--bs-selection-divider-shadow-bottom);
+}
+@media (min-width: 576px) {
+  .b-selection-divider {
+    height: 1.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .b-selection-divider {
+    height: 2rem;
+  }
+}
+@media (min-width: 992px) {
+  .b-selection-divider {
+    height: 2.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  .b-selection-divider {
+    height: 3rem;
+  }
+}
+@media (min-width: 1400px) {}
+/*********************************
+ * hover
+ *********************************/
+.b-hover-shadow {
+  display: block;
+  transition: all .4s;
+}
+.b-hover-shadow:hover {
+  box-shadow: 0 0.25rem .5rem var(--bs-hover-shadow-color) !important;
+}
+.b-hover-opacity {
+  transition: opacity .4s;
+}
+.b-hover-opacity:hover {
+  opacity: 0.8;
+}
+/*********************************
+ * b-resize-none
+ *********************************/
+.b-resize-none {
+  resize: none;
+}
+/*********************************
+ * button
+ *********************************/
+.btn-dashed {
+  transition: all .4s;
+  border: 1px dashed var(--bs-btn-color);
+}
+.btn-dashed:hover {
+  border: 1px solid var(--bs-btn-color);
+}
+/*********************************
+ * pre
+ *********************************/
+pre {
+  display: block;
+  padding: 1em;
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 1.42857143;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: #f5f5f5;
+  min-height: 20px;
+  border-radius: 4px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--bs-selection-divider-border);
+  color: var(--bs-card-color);
+  background-color: rgba(var(--bs-body-color-rgb), 0.03);
+  background-image: -webkit-linear-gradient(top, var(--bs-selection-divider-shadow-top) 0%, var(--bs-selection-divider-bg) 100%);
+  background-image:      -o-linear-gradient(top, var(--bs-selection-divider-shadow-top) 0%, var(--bs-selection-divider-bg) 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--bs-selection-divider-shadow-top)), to(var(--bs-selection-divider-bg)));
+  background-image:         linear-gradient(to bottom, var(--bs-selection-divider-shadow-top) 0%, var(--bs-selection-divider-bg) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe8e8e8', endColorstr='#fff5f5f5', GradientType=0);
+  background-repeat: repeat-x;
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, .05), 0 1px 0 rgba(255, 255, 255, .1);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, .05), 0 1px 0 rgba(255, 255, 255, .1);
+}
+/*********************************
+ * bg
+ *********************************/
+.bg-net {
+  position: relative;
+}
+.bg-net:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-repeat: repeat;
+  background-position: center;
+  background-image: var(--bg-bg-net-background-image);
+  z-index: -1;
+  opacity: .8;
+}
+.b-bg-backdrop-filter {
+  background-image: radial-gradient(transparent 1px,var(--bs-body-bg) 1px);
+  background-size: 4px 4px;
+  backdrop-filter: saturate(50%) blur(4px);
+  -webkit-backdrop-filter: saturate(50%) blur(4px);
+}
