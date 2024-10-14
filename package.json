@@ -4,7 +4,6 @@
   "description": "This is a private library made by cohen for my own project base on bootstrap v5",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack serve --mode development --watch",
     "build": "npx webpack"
   },
