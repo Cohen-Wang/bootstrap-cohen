@@ -30,6 +30,7 @@ a {
 /*********************************
  * 去掉 focus 的 box-shadow
  *********************************/
+.accordion-button:focus,
 .form-check-input:focus,
 .form-control:focus,
 .navbar-toggler:focus,
